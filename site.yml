@@ -1,9 +1,9 @@
 ---
-- name: apply the common configuration to all hosts
-  hosts: all
+#- name: apply the common configuration to all hosts
+#  hosts: all
 
-  roles:
-  - common
+#  roles:
+#  - common
 
 #- name: apply the httpd
 #  hosts: webservers
@@ -12,8 +12,8 @@
 #  - httpd
 #  - web
 
-#- name: apply the database configuration
-#  hosts: dbservers
+- name: apply the database configuration
+  hosts: dbservers
 
-#  roles:
-#  - mariadb
+  roles:
+  - mariadb
